@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <span id="gameNo"></span>
+    <span id="messageBox" class="message">
+      <span id="message"></span>
+      <span class="btns">
+        <button class="nextBtn" onclick="message()">Next Game</button>
+        <button class="btn" onclick="location.reload()">Reset points</button>
+      </span>
+    </span>
+    <section id="mainBox">
+      <section class="game">
+        <div class="point">
+          <span class="symbol">X</span>
+          <span class="name">Player 1</span>
+          <span id="player1point" class="points">0</span>
+          <span id="player1turn" class="turn">Your Turn</span>
+        </div>
+        <section class="box">
+          <div class="cols">
+            <div class="rows" id="sq1" onclick="gameClick(id)"></div>
+            <div class="rows" id="sq2" onclick="gameClick(id)"></div>
+            <div class="rows" id="sq3" onclick="gameClick(id)"></div>
+          </div>
+          <div class="cols">
+            <div class="rows" id="sq4" onclick="gameClick(id)"></div>
+            <div class="rows" id="sq5" onclick="gameClick(id)"></div>
+            <div class="rows" id="sq6" onclick="gameClick(id)"></div>
+          </div>
+          <div class="cols">
+            <div class="rows" id="sq7" onclick="gameClick(id)"></div>
+            <div class="rows" id="sq8" onclick="gameClick(id)"></div>
+            <div class="rows" id="sq9" onclick="gameClick(id)"></div>
+          </div>
+        </section>
+        <div class="point">
+          <span class="symbol">O</span>
+          <span class="name">Player 2</span>
+          <span id="player2point" class="points">0</span>
+          <span id="player2turn" class="turn">Your Turn</span>
+        </div>
+      </section>
+      <button class="btn" onclick="location.reload()">Reset Points</button>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>

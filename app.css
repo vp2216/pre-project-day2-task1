@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1{
+margin: 0;
+font-weight: 900;
+color: orangered;
+}
+
+#gameNo{
+  margin: 20px 0px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: blue;
+}
+
+.game{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+}
+
+.message{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  background-color: rgb(0, 124, 128);
+  font-weight: 600;
+  color: white;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nextBtn{
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-top: 30px;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+  background: green;
+}
+
+.nextBtn:hover{
+  background: rgb(0, 158, 0);
+}
+
+.point{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 600;
+  width: 20vw;
+}
+
+.symbol{
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.name{
+  color: rgb(80, 80, 80);
+  font-size: 1.2rem;
+}
+
+.points{
+  font-size: 1.5rem;
+}
+
+.turn{
+  display: none;
+  color: darkviolet;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.box{
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.cols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cols:nth-child(odd) .rows:nth-child(odd) {
+  background-color: rgb(134, 134, 134);
+  transition: ease-in-out 200ms;
+}
+
+.cols:nth-child(odd) .rows:nth-child(odd):hover{
+  background-color: rgb(155, 155, 155);
+}
+
+.cols:nth-child(odd) .rows:nth-child(even) {
+  background-color: rgb(94, 94, 94);
+  transition: ease-in-out 200ms;
+}
+
+.cols:nth-child(odd) .rows:nth-child(even):hover{
+  background-color: rgb(116, 116, 116);
+}
+
+.cols:nth-child(even) .rows:nth-child(odd) {
+  background-color: rgb(94, 94, 94);
+  transition: ease-in-out 200ms;
+}
+
+.cols:nth-child(even) .rows:nth-child(odd):hover{
+  background-color: rgb(116, 116, 116);
+}
+
+.cols:nth-child(even) .rows:nth-child(even) {
+  background-color: rgb(134, 134, 134);
+  transition: ease-in-out 200ms;
+}
+
+.cols:nth-child(even) .rows:nth-child(even):hover{
+  background-color: rgb(155, 155, 155);
+}
+
+.rows {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 4rem;
+  color: white;
+  cursor: default;
+}
+
+.btn{
+  padding: 10px;
+  border: none;
+  background: rgb(255, 0, 13);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-top: 30px;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: rgb(255, 37, 37);
+}
